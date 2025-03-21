@@ -1,9 +1,11 @@
 export const siteConfig = {
-  name: "Modulino",
+  name: "modulino",
   url: process.env.SITE_URL,
   description: process.env.SITE_DESCRIPTION,
   links: {
-    github: process.env.GITHUB_LINK as string,
+    github:
+      (process.env.GITHUB_LINK as string) ||
+      "https://github.com/7591yj/modulino",
   },
 };
 

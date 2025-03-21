@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client";
 
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
@@ -8,8 +8,14 @@ import { MainNav } from "@/components/common/main-nav";
 
 import { Button } from "@/components/ui/button";
 import { ModeSwitcher } from "@/components/assets/mode-switcher";
+import { FilterNav } from "./filter-nav";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const subHeaderPaths = ["/hub", "/modules", "/accessories"];
 
 export function SiteHeader() {
+  const pathname = usePathname();
   return (
     <header className="border-grid sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container-wrapper">
@@ -33,17 +39,20 @@ export function SiteHeader() {
                 </Link>
               </Button>
               <ModeSwitcher />
-              <div className="flex h-4 w-4">
-                <SignedOut>
-                  <SignInButton />
-                </SignedOut>
-                <SignedIn>
-                  <UserButton />
-                </SignedIn>
-              </div>
+              <SignedOut>
+                <SignInButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
             </nav>
           </div>
         </div>
+        {subHeaderPaths.includes(pathname) && (
+          <div className="container flex h-14 items-center gap-2 md:gap-4">
+            <FilterNav pathname={pathname} />
+          </div>
+        )}
       </div>
     </header>
   );

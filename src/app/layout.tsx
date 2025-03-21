@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "3DPA",
+  title: "modulino",
   description:
     "Plug-and-play 3D printer accessories, designed for seamless performance and built with passion.",
 };
