@@ -3,15 +3,18 @@
 import {
   TypographyBlockquote,
   TypographyH1,
-  TypographyH2,
   TypographyLarge,
   TypographyMuted,
+  TypographyP,
 } from "@/components/ui/typography";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 import Image from "next/image";
 
 import ImageStack from "./components/image-stack";
 import SpecTable from "./components/spec-table";
+import { Lightbulb } from "lucide-react";
 
 export default function HubPage() {
   return (
@@ -25,13 +28,15 @@ export default function HubPage() {
             all in one place.
           </TypographyLarge>
         </div>
-        <div className="relative w-full aspect-[16/9] mt-8 overflow-hidden rounded-xl">
-          <Image
-            src="/images/jainath-ponnala-9wWX_jwDHeM-unsplash.jpg"
-            alt="Image of the Hub"
-            fill
-            className="object-cover"
-          />
+        <div className="relative w-full mt-8 overflow-hidden rounded-xl">
+          <AspectRatio ratio={16 / 9}>
+            <Image
+              src="/images/jainath-ponnala-9wWX_jwDHeM-unsplash.jpg"
+              alt="Image of the Hub"
+              fill
+              className="object-cover"
+            />
+          </AspectRatio>
         </div>
         <TypographyMuted>
           Photo by{" "}
@@ -44,9 +49,35 @@ export default function HubPage() {
           </a>
         </TypographyMuted>
       </div>
+
       <div className="container mt-16">
         <div className="pr-5 pl-5">
-          <TypographyH2>Maximize Your 3D Printing Experience.</TypographyH2>
+          <TypographyH1>Maximize Your 3D Printing Experience.</TypographyH1>
+        </div>
+        <div className="mt-4">
+          <Alert>
+            <Lightbulb className="h-4 w-4" />
+            <AlertTitle>In one sentence:</AlertTitle>
+            <AlertDescription>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </AlertDescription>
+          </Alert>
+          <TypographyP>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            euismod, nisl eget aliquam aliquet, nisl nisl aliquet nisl, eget
+            aliquam nisl nisl eget nisl. <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            euismod, nisl eget aliquam aliquet, nisl nisl aliquet nisl, eget
+            aliquam nisl nisl eget nisl. <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            euismod, nisl eget aliquam aliquet, nisl nisl aliquet nisl, eget
+            aliquam nisl nisl eget nisl. <br />
+          </TypographyP>
+        </div>
+      </div>
+      <div className="container mt-16">
+        <div className="pr-5 pl-5">
+          <TypographyH1>Built to match your needs.</TypographyH1>
           <TypographyBlockquote>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </TypographyBlockquote>
