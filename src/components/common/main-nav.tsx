@@ -14,7 +14,7 @@ export function MainNav() {
       </Link>
       <nav className="flex items-center gap-4 text-sm xl:gap-6">
         <Link
-          href="/Hub"
+          href="/hub"
           className="transition-colors hover:text-foreground/80"
         >
           Hub
