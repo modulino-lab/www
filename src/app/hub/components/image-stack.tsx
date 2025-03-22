@@ -36,6 +36,7 @@ const images = [
     details: "Ultra-smooth materials, optimized for performance.",
   },
 ];
+
 export default function ImageStack() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
