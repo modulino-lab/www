@@ -12,7 +12,7 @@ import { FilterNav } from "./filter-nav";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const subHeaderPaths = ["/modules", "/accessories"];
+const subHeaderPaths = ["/hub", "/modules", "/accessories"];
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -49,7 +49,7 @@ export function SiteHeader() {
           </div>
         </div>
         {subHeaderPaths.includes(pathname) && (
-          <div className="container flex h-10 items-center gap-2 md:gap-4">
+          <div className="container flex h-14 items-center gap-2 md:gap-4">
             <FilterNav pathname={pathname} />
           </div>
         )}
