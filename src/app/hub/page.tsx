@@ -7,14 +7,12 @@ import {
   TypographyMuted,
   TypographyP,
 } from "@/components/ui/typography";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-
-import Image from "next/image";
 
 import ImageStack from "./components/image-stack";
 import SpecTable from "./components/spec-table";
 import { Lightbulb } from "lucide-react";
+import Splash from "./components/splash";
 
 export default function HubPage() {
   return (
@@ -28,17 +26,11 @@ export default function HubPage() {
             all in one place.
           </TypographyLarge>
         </div>
-        <div className="relative w-full mt-8 overflow-hidden rounded-xl">
-          <AspectRatio ratio={16 / 9}>
-            <Image
-              src="/images/jainath-ponnala-9wWX_jwDHeM-unsplash.jpg"
-              alt="Image of the Hub"
-              fill
-              className="object-cover"
-            />
-          </AspectRatio>
+        <div className="relative w-full mt-8 overflow-hidden rounded-2xl">
+          {/* TODO: change temp price  */}
+          <Splash price={0} />
         </div>
-        <TypographyMuted>
+        <TypographyMuted className="text-right">
           Photo by{" "}
           <a href="https://unsplash.com/@jainath?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
             Jainath Ponnala
@@ -49,7 +41,6 @@ export default function HubPage() {
           </a>
         </TypographyMuted>
       </div>
-
       <div className="container mt-16">
         <div className="pr-5 pl-5">
           <TypographyH1>Maximize Your 3D Printing Experience.</TypographyH1>
