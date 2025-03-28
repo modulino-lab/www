@@ -2,89 +2,15 @@ type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   logo: (props: IconProps) => (
-    <svg
-      viewBox="0 0 793.70135 1122.52"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <g transform="matrix(1.3333333,0,0,-1.3333333,0,1122.52)">
-        <g transform="translate(288.2755,349.5811)">
-          <path
-            d="M 0,0 -88.86,51.313 V 153.908 L 0,102.595 Z M 8.215,219.438 97.043,168.141 87.015,162.346 8.213,116.837 -80.643,168.143 Z M 105.258,51.313 16.431,0 v 102.595 l 78.799,45.519 10.028,5.792 z m 16.431,-9.498 v 121.58 9.489 l -8.215,4.744 -105.259,60.776 -105.286,-60.776 -8.22,-4.746 V 163.397 41.815 L 0,-18.978 l 8.213,-4.743 8.218,4.745 z"
-            style={{
-              fill: "#282828",
-              fillOpacity: 1,
-              fillRule: "nonzero",
-              stroke: "none",
-            }}
-          />
-        </g>
-        <g transform="translate(181.8159,240.9059)">
-          <path
-            d="M 0,0 110.529,-63.82 V 63.82 L 0,127.641 Z"
-            style={{
-              fill: "#282828",
-              fillOpacity: 1,
-              fillRule: "nonzero",
-              stroke: "none",
-            }}
-          />
-        </g>
-        <g transform="translate(168.3135,664.8043)">
-          <path
-            d="M 0,0 -110.529,-63.82 0,-127.641 110.529,-63.82 Z"
-            style={{
-              fill: "#282828",
-              fillOpacity: 1,
-              fillRule: "nonzero",
-              stroke: "none",
-            }}
-          />
-        </g>
-        <g transform="translate(52.6785,463.9828)">
-          <path
-            d="M 0,0 110.529,-63.82 V 63.82 L 0,127.641 Z"
-            style={{
-              fill: "#282828",
-              fillOpacity: 1,
-              fillRule: "nonzero",
-              stroke: "none",
-            }}
-          />
-        </g>
-        <g transform="translate(302.9304,177.0856)">
-          <path
-            d="M 0,0 110.529,63.82 V 191.461 L 0,127.641 Z"
-            style={{
-              fill: "#282828",
-              fillOpacity: 1,
-              fillRule: "nonzero",
-              stroke: "none",
-            }}
-          />
-        </g>
-        <g transform="translate(426.962,664.8043)">
-          <path
-            d="M 0,0 -110.529,-63.82 0,-127.641 110.529,-63.82 Z"
-            style={{
-              fill: "#282828",
-              fillOpacity: 1,
-              fillRule: "nonzero",
-              stroke: "none",
-            }}
-          />
-        </g>
-        <g transform="translate(432.0678,527.8032)">
-          <path
-            d="M 0,0 V -127.641 L 110.529,-63.82 V 63.82 Z"
-            style={{
-              fill: "#282828",
-              fillOpacity: 1,
-              fillRule: "nonzero",
-              stroke: "none",
-            }}
-          />
-        </g>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" {...props}>
+      <g fill="#282828">
+        <path d="m649.3,539.8l0,-162.1l0,-12.7l-11,-6.3l-140.3,-81l-140.4,81l-11,6.3l0,12.7l0,162.1l140.4,81.1l11,6.3l10.9,-6.3l140.4,-81.1zm-151.3,-236.9l118.5,68.4l-13.4,7.8l-105.1,60.6l-118.4,-68.4l118.4,-68.4zm129.4,224.2l-118.5,68.4l0,-136.8l105.1,-60.7l13.4,-7.7l0,136.8zm-140.4,68.4l-118.5,-68.4l0,-136.8l118.5,68.4l0,136.8z" />
+        <path d="m345.1,740.5l147.4,85.1l0,-170.2l-147.4,-85.1l0,170.2z" />
+        <path d="m327.1,175.3l-147.4,85.1l147.4,85l147.4,-85l-147.4,-85.1z" />
+        <path d="m172.9,443l147.4,85.1l0,-170.2l-147.4,-85.1l0,170.2z" />
+        <path d="m506.6,825.6l147.3,-85.1l0,-170.2l-147.3,85.1l0,170.2z" />
+        <path d="m671.9,175.3l-147.3,85.1l147.3,85l147.4,-85l-147.4,-85.1z" />
+        <path d="m678.8,357.9l0,170.2l147.3,-85.1l0,-170.2l-147.3,85.1z" />
       </g>
     </svg>
   ),
